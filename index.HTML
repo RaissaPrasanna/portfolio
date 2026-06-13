@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Personal Portfolio Website">
+    <meta name="keywords" content="Portfolio, Web Developer, Projects, Skills">
+    <meta name="author" content="Your Name">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        header{
+            background:#0077cc;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#005fa3;
+            padding:10px;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover,
+        nav a:focus{
+            text-decoration:underline;
+        }
+
+        main{
+            max-width:1000px;
+            margin:auto;
+            padding:20px;
+        }
+
+        section{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:8px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2{
+            color:#0077cc;
+            margin-bottom:10px;
+        }
+
+        .project{
+            border-left:4px solid #0077cc;
+            padding-left:15px;
+            margin-bottom:15px;
+        }
+
+        form{
+            display:flex;
+            flex-direction:column;
+        }
+
+        label{
+            margin-top:10px;
+            font-weight:bold;
+        }
+
+        input,
+        textarea{
+            padding:10px;
+            margin-top:5px;
+            border:1px solid #ccc;
+            border-radius:5px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:12px;
+            background:#0077cc;
+            color:white;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover,
+        button:focus{
+            background:#005fa3;
+        }
+
+        footer{
+            text-align:center;
+            padding:15px;
+            background:#0077cc;
+            color:white;
+        }
+
+        .skills ul{
+            padding-left:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header role="banner">
+    <h1>My Portfolio</h1>
+    <p>Aspiring Web Developer</p>
+</header>
+
+<nav aria-label="Main Navigation">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="home">
+    <h2>Home</h2>
+    <p>
+        Welcome to my portfolio website. This website demonstrates
+        semantic HTML5 structure, accessibility features, and SEO best practices.
+    </p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <article>
+        <p>
+            Hello! My name is Your Name. I am passionate about web development,
+            programming, and creating accessible websites for everyone.
+        </p>
+    </article>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Responsive Web Design</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+        <h3>Portfolio Website</h3>
+        <p>
+            Developed a responsive portfolio website using HTML5 and CSS3.
+        </p>
+    </article>
+
+    <article class="project">
+        <h3>Student Management System</h3>
+        <p>
+            Created a student management application using Python.
+        </p>
+    </article>
+
+    <article class="project">
+        <h3>Weather Application</h3>
+        <p>
+            Built a weather forecasting application using APIs.
+        </p>
+    </article>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+
+    <form aria-label="Contact Form">
+
+        <label for="name">Full Name</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true">
+
+        <label for="email">Email Address</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true">
+
+        <label for="message">Message</label>
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            required
+            aria-required="true"></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2026 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
