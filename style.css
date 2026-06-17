@@ -1,4 +1,19 @@
- *{
+ :root{
+    --bg-color:#f4f4f4;
+    --text-color:#333;
+    --header-color:#0077cc;
+    --nav-color:#005fa3;
+    --card-color:#ffffff;
+}
+
+.dark-mode{
+    --bg-color:#121212;
+    --text-color:#ffffff;
+    --header-color:#222;
+    --nav-color:#444;
+    --card-color:#1e1e1e;
+}
+*{
             margin:0;
             padding:0;
             box-sizing:border-box;
@@ -7,19 +22,19 @@
 
         body{
             line-height:1.6;
-            background:#f4f4f4;
-            color:#333;
+            background:var(--bg-color);
+            color:var(--text-color);
         }
 
         header{
-            background:#0077cc;
+            background:var(--header-color);
             color:white;
             padding:20px;
             text-align:center;
         }
 
         nav{
-            background:#005fa3;
+            background:var(--nav-color);
             padding:10px;
         }
 
@@ -51,7 +66,7 @@
         }
 
         section{
-            background:white;
+           background:var(--nav-color);
             padding:20px;
             margin-bottom:20px;
             border-radius:8px;
