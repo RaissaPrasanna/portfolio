@@ -137,7 +137,7 @@
         footer{
             text-align:center;
             padding:15px;
-            background:#0077cc;
+            background:var(--header-color);
             color:white;
         }
 
