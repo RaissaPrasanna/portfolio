@@ -96,6 +96,7 @@
         }
         .project:hover{
              transform:translateY(-5px);
+             box-shadow:0 8px 15px rgba(0,0,0,0.2);
         }
 
         form{
@@ -126,6 +127,9 @@
             border-radius:5px;
             cursor:pointer;
             transition:0.3s;
+        }
+        #themeBtn{
+            margin-top:15px;
         }
 
         button:hover,
